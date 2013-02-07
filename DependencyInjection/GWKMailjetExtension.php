@@ -36,7 +36,7 @@ class GWKMailjetExtension extends Extension
             $debug_level = 0;
         }
 
-        $definition = new Definition("\\Mailjet");
+        $definition = new Definition("Mailjet");
         $definition->setProperty("debug", $debug_level);
         $definition->setArguments(array($resolved['api_key'], $resolved['secret_key'], $resolved['format'], $debug_level));
         $definition->setFactoryClass("GWK\\MailjetBundle\\Factory\\Factory");
