@@ -1,0 +1,20 @@
+{
+    "name": "gwk/mailjetbundle",
+    "description": "Mailjet Bundle for Symfony 2",
+    "authors": [
+        {
+            "name": "Gijs Kunze",
+            "email": "gwkunze@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-0": { "GWK\\MailjetBundle": "" },
+        "classmap": ["GWK/MailjetBundle/Library/Mailjet.php"]
+    },
+    "target-dir": "GWK/MailjetBundle"
+}
