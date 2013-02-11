@@ -18,7 +18,7 @@ class Factory {
      * @param $debug_level
      * @return \Mailjet
      */
-    public function get($api_key, $secret_key, $format, $debug_level) {
+    public static function create($api_key, $secret_key, $format, $debug_level) {
         $mailjet = new \Mailjet($api_key, $secret_key);
 
         $mailjet->debug = $debug_level;
